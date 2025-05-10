@@ -2,8 +2,8 @@ import { Request, Response } from 'express'
 
 export default (req: Request, res: Response) => {
     try {
-        return new Response(JSON.stringify({ success: true }), { status: 200 });
+        res.status(200).json({ success: true });
     } catch (error) {
-        return new Response(JSON.stringify({ success: false }), { status: 500 });
+        res.status(500).json({ success: false });
     }
 };
