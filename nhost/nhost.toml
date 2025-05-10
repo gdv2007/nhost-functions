@@ -1,4 +1,0 @@
-hasura = { dir = "hasura" }
-
-[functions]
-dir = "functions"
